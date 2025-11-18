@@ -7,9 +7,9 @@
 <meta property="og:title" content="Aqeeqah Invitation for Mustafa Ansar Khan (Emaad)" />
 <meta property="og:description" content="You are warmly invited to the Aqeeqah ceremony at Shahi Biryani, Glendale Heights, IL." />
 <meta property="og:type" content="website" />
-<meta property="og:url" content="https://ak0625.github.io/emaad-aqeeqah/" />
+<meta property="og:url" content="https://YOUR-GITHUB-PAGES-URL-HERE" />
 <!-- Optional: replace with a real image URL hosted online -->
-<meta property="og:image" content="https://ak0625.github.io/emaad-aqeeqah/aqeeqah_preview.png" />
+<meta property="og:image" content="https://YOUR-IMAGE-URL-HERE" />
 <meta name="twitter:card" content="summary_large_image" />
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Scheherazade+New:wght@700&family=Playfair+Display:wght@500;700&display=swap" />
 <style>
@@ -166,6 +166,51 @@
     color: #d4a017;
     font-style: italic;
   }
+  a.map-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    position: relative;
+    color: #1d4ed8;
+    text-decoration: none;
+    padding: 2px 4px;
+    border-radius: 4px;
+    background: transparent;
+    border: none;
+    font-size: 0.95em;
+    transition: color 0.2s ease;
+  }
+  a.map-link::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    border-radius: 999px;
+    background: linear-gradient(90deg, #1d4ed8, #22c55e);
+    background-size: 200% 100%;
+    transition: width 0.25s ease;
+  }
+  a.map-link:hover {
+    color: #d4a017;
+  }
+  a.map-link:hover::after {
+    width: 100%;
+    animation: shimmer 0.8s linear;
+  }
+  a.map-link:active {
+    animation: pulse 0.25s ease-out;
+  }
+  @keyframes shimmer {
+    0% { background-position: 0% 50%; }
+    100% { background-position: 100% 50%; }
+  }
+  @keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.03); }
+    100% { transform: scale(1); }
+  }
   .section {
     text-align: center;
     color: #333;
@@ -266,8 +311,13 @@
   </div>
 
     <div class="section">
-    <strong><span class="icon-badge">📍</span>Shahi Biryani</strong><br />
-    246 Town Center Ln, Glendale Heights, IL 60139
+    <strong><span class="icon-badge">📍</span><a class="map-link" href="https://www.google.com/maps?q=Shaahi+Biryani,+246+Town+Center+Ln,+Glendale+Heights,+IL+60139" target="_blank">Shahi Biryani Banquet Hall</a></strong><br />
+     <a class="map-link" href="https://www.google.com/maps?q=Shaahi+Biryani,+246+Town+Center+Ln,+Glendale+Heights,+IL+60139" target="_blank">246 Town Center Ln, Glendale Heights, IL 60139</a><br />
+    
+    <span style="font-size: 0.9em; color:#1e3a8a; display:block; margin-top:8px;">
+      For directions or inquiries:<br/>
+      📞 <strong>773-934-9710</strong> &nbsp;|&nbsp; 📞 <strong>773-865-8941</strong>
+    </span>
   </div>
 
   <div class="rsvp">
