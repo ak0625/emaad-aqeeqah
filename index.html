@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Aqeeqah Invitation</title>
+<meta property="og:title" content="Aqeeqah Invitation for Mustafa Ansar Khan (Emaad)" />
+<meta property="og:description" content="You are warmly invited to the Aqeeqah ceremony at Shahi Biryani, Glendale Heights, IL." />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://YOUR-GITHUB-PAGES-URL-HERE" />
+<!-- Optional: replace with a real image URL hosted online -->
+<meta property="og:image" content="https://YOUR-IMAGE-URL-HERE" />
+<meta name="twitter:card" content="summary_large_image" />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Scheherazade+New:wght@700&family=Playfair+Display:wght@500;700&display=swap" />
+<style>
+  * {
+    box-sizing: border-box;
+  }
+  body {
+    font-family: 'Playfair Display','Georgia', serif;
+    background:
+      radial-gradient(circle at top left, #e0f2fe 0, transparent 55%),
+      radial-gradient(circle at bottom right, #fef3c7 0, transparent 55%),
+      #f5f5f4;
+    margin: 0;
+    padding: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+  .card {
+    position: relative;
+    width: 100%;
+    max-width: 720px;
+    padding: 32px 24px 40px;
+    border-radius: 22px;
+    background: linear-gradient(145deg, #fdfcfb, #e7f0ff);
+    box-shadow: 0 18px 30px rgba(15, 23, 42, 0.25);
+    overflow: hidden;
+  }
+  .card::after {
+    content: "☾";
+    position: absolute;
+    font-size: 180px;
+    color: rgba(148, 163, 184, 0.12);
+    right: -10px;
+    top: -40px;
+    pointer-events: none;
+  }
+  /* Gradient Islamic-style border */
+  .card::before {
+    content: "";
+    position: absolute;
+    inset: 10px;
+    border-radius: 18px;
+    padding: 2px;
+    background:
+      linear-gradient(135deg, #0f172a, #1d4ed8, #22c55e, #facc15, #1d4ed8);
+    -webkit-mask:
+      linear-gradient(#fff 0 0) content-box,
+      linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+    pointer-events: none;
+  }
+  /* Soft baby-blue inner panel with richer Islamic-inspired motif */
+  .card-inner {
+    position: relative;
+    background:
+      radial-gradient(circle at 20% 0%, rgba(248, 250, 252, 0.95) 0, rgba(248, 250, 252, 0) 55%),
+      radial-gradient(circle at 80% 0%, rgba(254, 243, 199, 0.9) 0, rgba(254, 243, 199, 0) 55%),
+      radial-gradient(circle at 50% 120%, rgba(219, 234, 254, 0.95) 0, rgba(219, 234, 254, 0) 60%),
+      radial-gradient(circle at 0% 50%, rgba(191, 219, 254, 0.45) 0, transparent 55%),
+      radial-gradient(circle at 100% 50%, rgba(250, 250, 250, 0.7) 0, transparent 55%),
+      #fdfcfb;
+    border-radius: 16px;
+    padding: 32px 22px 36px;
+    box-shadow: 0 0 0 1px rgba(148, 163, 184, 0.22);
+    overflow: hidden;
+  }
+  .card-inner::before,
+  .card-inner::after {
+    content: "";
+    position: absolute;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background:
+      conic-gradient(from 0deg,
+        rgba(30, 64, 175, 0.0) 0deg,
+        rgba(30, 64, 175, 0.12) 40deg,
+        rgba(250, 204, 21, 0.18) 80deg,
+        rgba(22, 163, 74, 0.16) 120deg,
+        rgba(30, 64, 175, 0.0) 180deg,
+        transparent 360deg);
+    opacity: 0.65;
+    pointer-events: none;
+    filter: blur(0.3px);
+  }
+  .card-inner::before {
+    top: -50px;
+    left: -40px;
+  }
+  .card-inner::after {
+    bottom: -50px;
+    right: -40px;
+    transform: rotate(180deg);
+  }
+  .header-arabic {
+    text-align: center;
+    font-family: 'Scheherazade New','Amiri','Traditional Arabic','Times New Roman',serif;
+    font-size: clamp(28px, 4.6vw, 38px);
+    color: #1c3f7c;
+    font-weight: 700;
+    letter-spacing: 0;
+    line-height: 1.4;
+  }
+  .header-eng {
+    text-align: center;
+    font-size: clamp(12px, 2vw, 16px);
+    margin-top: 10px;
+    margin-bottom: 16px;
+    color: #445;
+    font-style: italic;
+    letter-spacing: 0.03em;
+  }
+  /* Decorative star & moon divider */
+  .divider {
+    text-align: center;
+    font-size: 14px;
+    letter-spacing: 0.25em;
+    color: #1d4d90;
+    margin: 12px auto 24px;
+  }
+  .verse {
+    text-align: center;
+    font-style: italic;
+    color: #1a3c72;
+    margin-bottom: 28px;
+    font-size: clamp(13px, 2.1vw, 17px);
+  }
+  h1 {
+    text-align: center;
+    color: #1b3f76;
+    font-family: 'Playfair Display','Georgia',serif;
+    font-size: clamp(26px, 5vw, 38px);
+    margin: 10px auto 6px;
+    letter-spacing: 0.03em;
+    border-bottom: 2px solid #1e3a8a;
+    padding-bottom: 6px;
+    width: fit-content;
+  }
+  .nickname {
+    display: block;
+    margin-top: 4px;
+    font-size: 0.9em;
+    letter-spacing: 0.01em;
+    text-transform: none;
+    font-style: italic;
+    font-family: 'Playfair Display','Georgia','Palatino Linotype','Book Antiqua',Palatino,serif;
+    color: #1e40af;
+  }
+  .ceremony {
+    font-weight: 700;
+    color: #d4a017;
+    font-style: italic;
+  }
+  .section {
+    text-align: center;
+    color: #333;
+    font-size: clamp(14px, 2.3vw, 18px);
+    margin: 14px 0;
+    letter-spacing: 0.01em;
+  }
+  .parents {
+    font-size: clamp(13px, 2.1vw, 17px);
+    color: #374151;
+    font-style: italic;
+  }
+  .duaa {
+    text-align: center;
+    margin: 22px auto 20px;
+    font-size: clamp(14px, 2.3vw, 18px);
+    max-width: 80%;
+    color: #2e4a7a;
+    line-height: 1.6;
+  }
+  .rsvp {
+    text-align: center;
+    margin-top: 30px;
+    font-size: clamp(14px, 2.3vw, 18px);
+  }
+  .rsvp a {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 22px;
+    border-radius: 999px;
+    background: linear-gradient(135deg, #1d4ed8, #22c55e);
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 15px;
+    box-shadow: 0 6px 14px rgba(37, 99, 235, 0.4);
+    transition: transform 0.15s ease, box-shadow 0.15s ease, filter 0.15s ease;
+  }
+  .icon-badge {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 24px;
+    height: 24px;
+    margin-right: 6px;
+    border-radius: 999px;
+    background: radial-gradient(circle at 30% 0%, #facc15, #1d4ed8);
+    color: #f9fafb;
+    font-size: 14px;
+    box-shadow: 0 2px 6px rgba(15, 23, 42, 0.35);
+  }
+  .rsvp a:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 10px 18px rgba(15, 23, 42, 0.35);
+    filter: brightness(1.05);
+  }
+  .rsvp a:active {
+    transform: translateY(0);
+    box-shadow: 0 5px 10px rgba(15, 23, 42, 0.3);
+  }
+  @media (min-width: 900px) {
+    .card {
+      padding: 40px 40px 46px;
+    }
+    .card-inner {
+      padding: 32px 40px 36px;
+    }
+  }
+</style>
+</head>
+<body>
+<div class="card">
+  <div class="card-inner">
+  <div class="header-arabic">بِسْمِ اللهِ الرَّحْمٰنِ الرَّحِيم</div>
+  <div class="header-eng">In the Name of Allah, the Most Gracious, the Most Merciful</div>
+
+  <div class="divider">★ ✦ ☾ ✦ ★</div>
+
+    <div class="verse">“For every child, an aqeeqah is to be offered.” — Tirmidhi 1522</div>
+
+      <div class="section">
+    With hearts filled with gratitude to Allah (SWT),<br />
+    <strong>Mrs. &amp; Mr. Ahmed Khan</strong><br />
+    warmly invite you to the <span class="ceremony">Aqeeqah Ceremony</span> of their beloved grandson
+  </div>
+
+    <h1>Mustafa Ansar Khan<br /><span class="nickname">(Emaad)</span></h1>
+
+    <div class="section parents">
+    Son of <strong>Mrs. &amp; Mr. Ansar Ahmed Khan</strong>
+  </div>
+
+
+
+        <div class="section">
+    <strong><span class="icon-badge">📅</span>Saturday, December 27th, 2025</strong><br />
+    6:00 PM – 10:00 PM
+  </div>
+
+    <div class="section">
+    <strong><span class="icon-badge">📍</span>Shahi Biryani</strong><br />
+    246 Town Center Ln, Glendale Heights, IL 60139
+  </div>
+
+  <div class="rsvp">
+    <strong>Kindly RSVP using the link below</strong><br />
+    RSVP by December 15th, 2025<br /><br />
+    <a href="https://form.jotform.com/253176682680162" target="_blank" rel="noopener noreferrer">Click here to RSVP</a>
+  </div>
+  </div>
+</div>
+</body>
+</html>
